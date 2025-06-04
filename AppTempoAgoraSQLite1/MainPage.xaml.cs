@@ -142,6 +142,7 @@ namespace MauiAppTempoAgoraSQLite
             {
                 await DisplayAlert("Ops", ex.Message, "OK");
             }
+
         }
     }
 
