@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AppTempoAgoraSQLite1.Models;
 using Newtonsoft.Json.Linq;
 
-namespace MauiAppTempoAgora.Services
+namespace AppTempoAgoraSQLite1.Services
 {
     public class DataService
     {

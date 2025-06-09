@@ -1,18 +1,28 @@
 ﻿using System.Collections.ObjectModel;
-using System.Diagnostics;
-using MauiAppTempoAgoraSQLite.Models;
+using AppTempoAgoraSQLite1.Models;
+using AppTempoAgoraSQLite1.Services;
 
-namespace MauiAppTempoAgoraSQLite
+namespace AppTempoAgoraSQLite1
 {
     public partial class MainPage : ContentPage
     {
 
         ObservableCollection<Tempo> lista = new ObservableCollection<Tempo>();
+        public object lstPrevisoes;
+        public object txt_cidade;
+        private object lbl_res;
+
         public MainPage()
         {
             InitializeComponent();
             lstPrevisoes.ItemsSource = lista;
         }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         protected async override void OnAppearing()
         {
             try

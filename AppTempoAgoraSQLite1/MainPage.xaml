@@ -1,8 +1,8 @@
 ﻿ ﻿<?xml version="1.0" encoding="utf-8" ?>
-﻿<?xml version="1.0" encoding="utf-8" ?>
+    
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiAppTempoAgoraSQLite.MainPage">
+             x:Class="AppTempoAgoraSQLite1.MainPage">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -35,9 +35,9 @@
 
             <StackLayout Orientation="Horizontal">
                 <SearchBar x:Name="txt_search"
-                               HorizontalOptions="FillAndExpand"
-                              Placeholder="Busca de Previsões"
-                              TextChanged="txt_search_TextChanged">
+                           HorizontalOptions="FillAndExpand"
+                           Placeholder="Busca de Previsões"
+                           TextChanged="txt_search_TextChanged">
 
                     <SearchBar.Margin>
 
@@ -57,9 +57,9 @@
             <Border Padding="0" Margin="10" VerticalOptions="FillAndExpand">
                 
                 <ListView x:Name="lstPrevisoes"
-                            IsPullToRefreshEnabled="True"
-                            Refreshing="lstPrevisoes_Refreshing"
-                            ItemSelected="lstPrevisoes_ItemSelected">
+                          IsPullToRefreshEnabled="True"
+                          Refreshing="lstPrevisoes_Refreshing"
+                          ItemSelected="lstPrevisoes_ItemSelected">
                     <ListView.Header>
 
                         <Grid ColumnDefinitions="*, *, *, *, *, *"                                  
